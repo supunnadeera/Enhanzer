@@ -1,0 +1,147 @@
+/* book-list.component.scss */
+.page-container {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .page-header {
+    background-color: white;
+    padding: 24px 0;
+    margin-bottom: 32px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .title-section {
+      h1 {
+        margin: 0;
+        font-size: 28px;
+        font-weight: 500;
+        color: #2c3e50;
+      }
+  
+      .subtitle {
+        margin: 4px 0 0;
+        color: #6c757d;
+        font-size: 16px;
+      }
+    }
+  
+    .add-button {
+      padding: 0 20px;
+      height: 40px;
+      font-weight: 500;
+  
+      mat-icon {
+        margin-right: 8px;
+      }
+    }
+  }
+  
+  .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  
+  .table-container {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+  
+    table {
+      width: 100%;
+  
+      th {
+        font-weight: 500;
+        color: #2c3e50;
+        background-color: #f8f9fa;
+        padding: 16px;
+      }
+  
+      td {
+        padding: 16px;
+        color: #4a5568;
+      }
+  
+      tr.mat-mdc-row:hover {
+        background-color: #f8f9fa;
+      }
+  
+      .actions-header {
+        text-align: right;
+      }
+  
+      .actions-cell {
+        text-align: right;
+        padding-right: 8px;
+  
+        button {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: 64px 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  
+    .empty-icon {
+      width: 64px;
+      height: 64px;
+      font-size: 64px;
+      color: #6c757d;
+      margin-bottom: 24px;
+    }
+  
+    h2 {
+      margin: 0 0 12px;
+      color: #2c3e50;
+      font-weight: 500;
+    }
+  
+    p {
+      margin: 0 0 24px;
+      color: #6c757d;
+      font-size: 16px;
+    }
+  
+    button {
+      padding: 0 24px;
+      height: 44px;
+  
+      mat-icon {
+        margin-right: 8px;
+      }
+    }
+  }
+  
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    .page-header {
+      .header-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+      }
+  
+      .add-button {
+        width: 100%;
+      }
+    }
+  
+    .table-container {
+      overflow-x: auto;
+    }
+  }
